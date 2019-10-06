@@ -26,3 +26,10 @@ function printTable(table) {
 }
 
 printTable(['1',2,3]);
+
+// Zad 1.6
+
+function getEvenAvarage(arr) {
+    arr.sort((a,b) => b-a);
+    return arr;
+}
