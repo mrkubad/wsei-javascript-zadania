@@ -14,4 +14,15 @@ function distFromAvarage(table) {
     })
     return newArray;
 }
-distFromAvarage([1,2,3,4,5,6,7])
+distFromAvarage([1,2,3,4,5,6,7]);
+
+
+// Zad 1.3
+
+function printTable(table) {
+    for(let i = 0; i < table.length; ++i) {
+        console.log(table[i]);
+    }
+}
+
+printTable(['1',2,3]);
