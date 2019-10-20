@@ -1,3 +1,4 @@
+//Zadanie 1
 function cointHello(num) {
     let counter = 1;
     let intervalHandle = setInterval(() => {
