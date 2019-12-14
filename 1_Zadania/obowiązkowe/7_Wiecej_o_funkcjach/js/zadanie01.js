@@ -5,21 +5,21 @@
  * Napisz komentarze dla kazdej z linijek kodu
  */
 
-//Twoj komentarz ...
+//Zadeklarowanie funckji sortArray
 function sortArray() {
 
-    //Twoj komentarz ...
+    //Stworzenie tablicy, która zwiera liczby całkowite 41,3,6 ...
     var points = [41, 3, 6, 1, 114, 54, 64];
 
-    //Twoj komentarz ...
+    //Wywołanie operacji sortowania z funkcją jako argument
     points.sort(function (a, b) {
-        //Twoj komentarz ...
+        //Zwrócenie różnicy pomiędzy kolejnymi elementami tablicy
         return a - b;
     });
 
-    //Twoj komentarz ...
+    //Zwrócenie posortowanej tablicy points
     return points;
 }
 
-//Twoj komentarz ...
+//Wywołanie funkcji sortArray
 sortArray();
