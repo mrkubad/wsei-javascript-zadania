@@ -1,23 +1,11 @@
-document.addEventListener('DOMContentLoaded', function () {
+let Students = function(array) {
+	this.students = array;
+	this.numberOfLetters = [];
+}
+Students.prototype.countLetters = function() { 
+	this.numberOfLetters = this.students.map(e=>e.length);
+};
 
-	var getSpan = document.querySelectorAll('span');
-	var getUl = document.querySelectorAll('ul');
-
-	for (let i = 0; i < getUl.length; i++) {
-		getUl[i].style.display = 'none';
-	}
-
-	for (let i = 0; i < getSpan.length; i++) {
-		getSpan[i].addEventListener('mouseover', (event) => {
-			console.log(event.target);
-			event.target.nextElementSibling.style.display = 'block';
-
-		})
-
-		getSpan[i].addEventListener('mouseout', (event) => {
-			event.target.nextElementSibling.style.display = 'none';
-		})
-
-	};
-
-});
+let students = new Students(["Ania", "Kamil", "Mariusz"]);
+students.countLetters();
+console.log(students.numberOfLetters);

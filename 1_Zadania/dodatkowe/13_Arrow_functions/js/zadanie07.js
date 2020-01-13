@@ -5,7 +5,10 @@ const App = function () {
 
 
 App.prototype.generateLinks = function () {
-
+  // Zadanie 7
+  for(let domain of this.websites) {
+    this.links.push(`https://${domain}.com`);
+  }
 }
 
 
