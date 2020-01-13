@@ -16,3 +16,14 @@ let people = [
         profession: "trener"
     }
 ];
+function setFunnyName(...name) {
+    people = [...people, ...name];
+}
+
+
+const person = {person: "Jakub Dedio", profession: "żul"};
+const person2 = {person: "Jakub Dedio", profession: "leń"};
+
+setFunnyName(person, person2);
+
+console.table(people);
