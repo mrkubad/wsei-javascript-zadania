@@ -22,7 +22,8 @@ document.addEventListener("DOMContentLoaded", function () {
       console.log("innerFuncOne: ", this);
     }
     innerFuncOne();
-
+    // dopisałbym argument do funkcji innerFuncOne i przekazał this z funkcji nadrzędnej jako parametr
   });
 
 })
+
